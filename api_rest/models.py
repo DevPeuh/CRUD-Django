@@ -1,7 +1,6 @@
 from django.db import models
 
 class Usuario(models.Model):
-    # Definir quais serão os campos que estarão dentro do banco de dados
     id_usuario = models.AutoField(primary_key=True)
     nome_usuario = models.CharField(max_length=150, default='')
     email_usuario = models.EmailField(default='')
